@@ -23,7 +23,7 @@ Projeto desenvolvido para aproximar aqueles que desejam conhecer o anime e aquel
 <br>
 
 <p align="center">
-  <img alt="projeto final" src=".github/preview.jpg" width="100%">
+  <img alt="projeto final" src=".github/preview.png" width="100%">
 </p>
 
 ## 🚀 Tecnologias
