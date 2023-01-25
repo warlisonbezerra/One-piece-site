@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Poppins:wght@100;200;700&family=Roboto:wght@100&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bree Serif', serif;
+}
+body {
+    background: radial-gradient(#cfcf6e,20%, #dfab1ecb);
+}
+
+a,
+a:hover,
+a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+
+.line {
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px dashed rgb(236, 232, 232);
+    margin: 40px 0;
+}
+
+/* ---------------------------------------------------
+    SIDEBAR STYLE
+----------------------------------------------------- */
+
+.wrapper {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+}
+
+#sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    background: #eb3e3e;
+    color: rgb(255, 255, 255);
+    transition: all 0.3s;
+}
+
+#sidebar.active {
+    margin-left: -250px;
+}
+
+#sidebar .sidebar-header {
+    padding: 20px;
+    background: #eb3e3e;
+}
+
+#sidebar ul.components {
+    padding: 20px 0;
+    border-bottom: 1px solid #000000;
+}
+
+#sidebar ul p {
+    font-size: 18px;
+    margin-left: -2px;
+    color: #ffffff;
+    background-color: #000000;
+    padding: 10px;
+}
+
+#sidebar ul li a {
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+}
+
+#sidebar ul li a:hover {
+    color: #e02d2d;
+    background: #fff;
+}
+
+#sidebar ul li.active>a,
+a[aria-expanded="true"] {
+    color: #fff;
+    background: #dd2f2f;
+}
+
+a[data-toggle="collapse"] {
+    position: relative;
+}
+
+.dropdown-toggle::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+ul ul a {
+    font-size: 0.9em !important;
+    padding-left: 30px !important;
+    background: #e63737;
+}
+
+ul.CTAs {
+    padding: 20px;
+}
+
+ul.CTAs a {
+    text-align: center;
+    font-size: 0.9em !important;
+    display: block;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+
+a.download {
+    background: #fff;
+    color: #dd1414;
+}
+
+a.article,
+a.article:hover {
+    background: #ca2020 !important;
+    color: #fff !important;
+}
+.container2{
+    background-color: #e02d2d;
+    padding: 0 5%;
+    margin: 0 auto;
+}
+.ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+.ul li{
+    margin: 0 35px;
+    font-size: 30px;
+    color: #000000;
+}
+.ul li:hover{
+    color: #ffffff;
+    transform: translateX(2%);
+    transition-duration: 0.3s;
+}
+
+.container3{ 
+    height: 320px;
+    width: 500px;
+    margin-left: 500px;
+    margin-top: 211px;
+}
+/**/
+.box-container{
+width: 100%;
+height: 100%;
+background-image: url("img/luffycircle.png");
+cursor: pointer;
+transition: 0.5s;  
+}
+.container3:hover .box-container{
+transform: scale(1.1);
+}
+.container{
+    position: relative;
+    width: 620px;
+    margin-top: -520px;
+    margin-left: -40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.container .text{
+    position: center;
+    max-width: 600px;
+    margin-left: 25px;
+}
+.container .text h1{
+    color: #000000;
+    margin-bottom: -50px;
+    font-weight: 400;
+    font-size: 2em;   
+}
+.container .text h2{
+    color: #000000;
+    margin-top: 60px;
+    line-height: 1.80cm;
+    font-weight: 800;
+    font-size: 2.4em;
+
+}
+.container .text h2 span{
+    font-size: 3em;
+    color: #e02d2d;
+}
+.container .text2 p{
+    color: rgb(0, 0, 0);
+    font-size: 1.2em;
+    line-height: 0.7cm;
+}
+img{
+    cursor: pointer;
+}
+.container .text2 a{
+    display: inline-block;
+    margin-left: -50;
+    padding: 2px 4px;
+    background-color: #e02d2d;
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+    text-decoration: none;
+    letter-spacing: 1px;
+    border-radius: 40px;
+    transition: 0.3s ease-in-out;
+}
+.container .text2 a:hover{
+    transform: translateY(-3px);
+}
+.circle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #e02d2d;
+    clip-path: circle(40% at bottom right);
+    z-index: -1;
+}
+
+/* ---------------------------------------------------
+    CONTENT STYLE
+----------------------------------------------------- */
+
+#content {
+    width: 100%;
+    padding: 20px;
+    min-height: 100vh;
+    transition: all 0.3s;
+}
+
+/* ---------------------------------------------------
+    MEDIAQUERIES
+----------------------------------------------------- */
+
+@media (max-width: 768px) {
+    #sidebar {
+        margin-left: -250px;
+    }
+    #sidebar.active {
+        margin-left: 0;
+    }
+    #sidebarCollapse span {
+        display: none;
+    }
+}

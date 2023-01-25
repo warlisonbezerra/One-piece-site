@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style5.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="shortcut icon" href="img/chapeu.ico" type="image/x-icon">
+    <title>Akuma no Mi</title>
+
+    <a href="index.html"><abbr title="Voltar"><img src="img/back.png" class="pit" alt="voltar para página anterior"></abbr></a>
+
+    <style>
+        img.minus{
+        width: 29px;
+        height: 20px;
+        margin: 4px;
+        margin-top: 700px;
+        display: inline-block
+        }
+
+        img.pit{
+        max-width: 30px;
+        display: block;
+        margin-bottom: 700px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+
+    <section>
+
+
+        <div class="swiper mySwiper container"> 
+            <div class="swiper-wrapper content">
+
+                <div class="swiper-slide card">
+                    <div class="card-content"> 
+                        <div class="akuma">
+                            <img src="img/ope ope no mi.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide card">
+                    <div class="card-content"> 
+                    <div class="akuma">
+                        <img src="img/bara bara no mi.png" alt="">
+                    </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide card">
+                    <div class="card-content"> 
+                        <div class="akuma">
+                            <img src="img/gomu gomu no mi.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide card">
+                    <div class="card-content"> 
+                        <div class="akuma">
+                            <img src="img/hana hana no mi.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide card">
+                    <div class="card-content"> 
+                        <div class="akuma">
+                            <img src="img/loading.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide card">
+                    <div class="card-content"> 
+                        <div class="akuma">
+                            <img src="img/loading.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+      </section>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        slidesPerGroup: 3,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+
+  
+</body>  
+</html>

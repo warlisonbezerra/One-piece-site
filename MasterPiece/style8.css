@@ -1,0 +1,107 @@
+body {
+    background: radial-gradient(#cfcf6e,20%, #dfab1ecb);
+}
+
+.container2{
+    background-color: #e02d2d;
+    padding: 0 5%;
+    margin: 0 auto;
+}
+.ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+.ul li{
+    margin: 0 35px;
+    font-size: 30px;
+    color: #000000;
+}
+.ul li:hover{
+    color: #ffffff;
+    transform: translateX(2%);
+    transition-duration: 0.3s;
+}
+
+.container3{ 
+    height: 320px;
+    width: 500px;
+    margin-left: 0px;
+    margin-top: 0px;
+}
+/**/
+.box-container{
+width: 100%;
+height: 100%;
+background-image: url("img/luffycircle.png");
+cursor: pointer;
+transition: 0.5s;  
+}
+.container3:hover .box-container{
+transform: scale(1.1);
+}
+.container{
+    position: relative;
+    width: 800px;
+    margin-top: 0px;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.container .text{
+    position: center;
+    max-width: 600px;
+    font-family: 'Bree Serif', serif;
+    margin-left: 25px;
+}
+.container .text h1{
+    color: #000000;
+    margin-bottom: -50px;
+    font-weight: 400;
+    font-size: 2em;   
+}
+.container .text h2{
+    color: #000000;
+    margin-top: 60px;
+    line-height: 1.80cm;
+    font-weight: 800;
+    font-size: 2.4em;
+
+}
+.container .text h2 span{
+    font-size: 3em;
+    color: #e02d2d;
+}
+.container .text2 p{
+    color: rgb(0, 0, 0);
+    font-size: 1.2em;
+    line-height: 0.7cm;
+}
+img{
+    cursor: pointer;
+    margin-left: 20px;
+}
+.container .text2 a{
+    display: inline-block;
+    margin-left: -50;
+    padding: 2px 4px;
+    background-color: #e02d2d;
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+    text-decoration: none;
+    letter-spacing: 1px;
+    border-radius: 40px;
+    transition: 0.3s ease-in-out;
+}
+.container .text2 a:hover{
+    transform: translateY(-3px);
+}
+.container .text3 a{
+    display: inline-block;
+    padding: 2px 4px;
+    transition: 0.3s ease-in-out;
+}
+.container .text3 a:hover{
+    transform: translateY(-3px);
+}
